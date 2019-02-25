@@ -40,14 +40,14 @@
 		zone.addEventListener("dragover", function(e) {
 			e.preventDefault();
 			console.log("you dragged over me!");
-		)};
+		});
 
 	zone.addEventListener("drop", function(e) {
 		e.preventDefault();
 		console.log("you dropped sumpin on me");
 
 		let piece = e.dataTransfer.getData("text/plain");
-		e.target.appendChild(document.querySelector(`#${piece}`)};
+		e.target.appendChild(document.querySelector(`#${piece}`);
 	});
 
 
